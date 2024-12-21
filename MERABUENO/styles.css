@@ -1,0 +1,219 @@
+/* Global styles for body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #d22e2e, #8b0000);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh; /* Use 100vh to fill the height of the viewport */
+    position: relative;
+    overflow-x: hidden;
+    flex-direction: column;
+    padding: 20px;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+/* Welcome Box */
+.welcome-box {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px 50px;
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width: 100%;
+    max-width: 700px;
+    border: 4px solid #F7C958;
+    box-sizing: border-box;
+}
+
+/* Welcome Title */
+.welcome-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #8b0000;
+    margin-bottom: 20px;
+}
+
+/* Description */
+.description {
+    font-size: 17px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+/* Logo */
+.logo {
+    font-size: 40px;
+    color: #8b0000;
+    margin-bottom: 20px;
+}
+
+/* Center Title */
+.center-title {
+    font-size: 50px;
+    font-weight: bold;
+    color: #DD8523;
+    -webkit-text-stroke: 1px #F7C958;
+    text-align: center;
+    margin-top: 100px;
+    border-radius: 2px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Container for page content */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align from the top */
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+}
+
+/* Signup and Login Box */
+.login-box,
+.signup-box {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 3px solid #F7C958;
+    box-sizing: border-box; /* Added for better control */
+}
+
+/* Input fields */
+.input-field {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-field label {
+    font-size: 14px;
+    color: #000000;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #d22e2e;
+    border-radius: 20px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Buttons */
+.welcome-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    border-radius: 15px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    flex-grow: 0;
+    width: 150px; 
+}
+
+.welcome-btn:hover {
+    background-color: #d22e2e;
+}
+
+.welcome-btn:active {
+    transform: scale(0.98);
+}
+
+.signup-btn,
+.login-btn {
+    display: block;
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #d22e2e;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin: 20px auto;
+}
+
+.signup-btn:hover,
+.login-btn:hover {
+    background-color: #8b0000;
+}
+
+/* Signup and Login Titles */
+.signup-title,
+.login-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Signup and Login Links */
+.signup-link,
+.login-link {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.signup-link a,
+.login-link a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.signup-link a:hover,
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Error Popup */
+.error-popup {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 15px;
+    margin-top: 20px;
+    color: #721c24;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.error-popup button {
+    background-color: #f5c6cb;
+    border: none;
+    color: #721c24;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.error-popup button:hover {
+    background-color: #f1b0b7;
+}
+
